@@ -19,8 +19,8 @@ body {
 
 /* Header */
 .header {
-  width: 1314;
-  height: 70;
+  width: 1314px;
+  height: 70px;
   left: -14px;
   background: #ffffff;
   box-shadow: 0px 0.5px 2px 0px #00000040;
@@ -33,9 +33,9 @@ body {
 .header h1 {
   color: #007bff;
 }
-.header img {
-  width: 134;
-  height: 31;
+.img1 {
+  width: 134px;
+  height: 31px;
   top: 25px;
   left: 88px;
 }
@@ -51,7 +51,7 @@ body {
   margin-bottom: 20px;
 }
 .usingtext {
-  height: 56;
+  height: 56px;
   top: 90px;
   left: 461px;
   padding: 10px;
@@ -175,8 +175,8 @@ body {
   flex-wrap: wrap;
 }
 .job-card {
-  width: 339;
-  height: 255;
+  width: 339px;
+  height: 255px;
   top: 524px;
   left: 93px;
   border-radius: 10px;
