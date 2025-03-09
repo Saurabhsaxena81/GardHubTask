@@ -1,3 +1,4 @@
+import Image from "next/image";
 const jobs = [
   {
     title: "Technical Support Special.",
@@ -31,16 +32,23 @@ export default function JobListings() {
       <div className="container">
         <div className="usingtext findjob">
           <span>Find Your Dream Job</span>
-          <img src="star.png" alt="logo" />{" "}
+          <Image
+            src="/star.png"
+            alt="logo"
+            width={20} /* Adjust size as needed */
+            height={20}
+          />{" "}
         </div>
 
         <div className="jobs-container">
           {jobs.map((job, index) => (
             <div key={index} className="job-card">
               <div className="job-header">
-                <img
+                <Image
                   src={job.companyImg}
                   alt={job.company}
+                  height={45}
+                  width={45}
                   className="company-logo"
                 />
 
@@ -53,12 +61,23 @@ export default function JobListings() {
               <span className="job-type">{job.type}</span>
 
               <div className="job-location">
-                <img src="/MapPin.png" alt="Location" />
+                <Image
+                  src="/MapPin.png"
+                  alt="Location"
+                  width={14.699884414672852}
+                  height={13.997374534606934}
+                />
                 <span>{job.location}</span>
               </div>
 
               <div className="job-salary">
-                <img src="/salary.png" alt="Salary" className="salary" />
+                <Image
+                  src="/salary.png"
+                  alt="Salary"
+                  width={14.699884414672852}
+                  height={13.997374534606934}
+                  className="salary"
+                />
                 <span>{job.salary}</span>
               </div>
 
