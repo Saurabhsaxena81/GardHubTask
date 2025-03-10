@@ -1,14 +1,8 @@
-import Header from "../components/Header";
-import WhoIsUsing from "../components/WhoIsUsing";
-import JobListings from "../components/JobListings";
-
-
+import Loader from "../components/Loader";
 export default function Home() {
   return (
     <div>
-      <Header />
-      <WhoIsUsing />
-      <JobListings />
+      <Loader />
     </div>
   );
 }

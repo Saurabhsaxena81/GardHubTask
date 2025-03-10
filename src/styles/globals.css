@@ -16,6 +16,103 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+/* Loading Animation*/
+/* Container for the loader */
+/* Container for the loader */
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  background-color: #000000; /* Black background */
+  overflow: hidden;
+}
+
+/* Frame Image */
+.main-logo {
+  position: absolute;
+  top: 200px;
+  left: 465px;
+  width: 350px;
+  height: 317px;
+  border-radius: 30px;
+  z-index: 1;
+  opacity: 1;
+  /* Fade out at 6.5s */
+}
+
+/* Half-Ellipses and Logo Container */
+
+/* Moving Ellipse */
+.ellipse {
+  position: absolute;
+  top: 379px; /* Initial position from keyframes */
+  left: 712px; /* Initial position from keyframes */
+  width: 28px;
+  height: 27px;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+/* Orbit Animation for Ellipse */
+.ellipse.animate {
+  animation: moveEllipse 5s cubic-bezier(0.25, 1, 0.5, 1) forwards,
+    increaseSize 0.5s ease-in-out forwards 5s,
+    fadeOut 0.2s ease-in-out forwards 5.5s;
+}
+
+/* Orbiting Path */
+@keyframes moveEllipse {
+  0% {
+    top: 322px;
+    left: 712px;
+  }
+  5% {
+    top: 293px;
+    left: 712px;
+  }
+  10% {
+    top: 268px;
+    left: 712px;
+  }
+  20% {
+    top: 262px;
+    left: 670px;
+  }
+  30% {
+    top: 237px;
+    left: 652px;
+  }
+  40% {
+    top: 239px;
+    left: 600px;
+  }
+  50% {
+    top: 283px;
+    left: 550px;
+  }
+  60% {
+    top: 345px;
+    left: 530px;
+  }
+  70% {
+    top: 423px;
+    left: 540px;
+  }
+  80% {
+    top: 453px;
+    left: 570px;
+  }
+  90% {
+    top: 463px;
+    left: 630px;
+  }
+  100% {
+    top: 536px;
+    left: 640px;
+  }
+}
 
 /* Header */
 .header {
