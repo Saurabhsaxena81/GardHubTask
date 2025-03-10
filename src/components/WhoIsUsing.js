@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function WhoIsUsing() {
   return (
     <section className="using-section">
@@ -11,7 +12,11 @@ export default function WhoIsUsing() {
                 Access internships, jobs, and opportunities tailored for you.
               </p>
             </div>
-            <img src="/student1.png" alt="University" className="card-image" />
+            <Image
+              src="/student1.png"
+              alt="University"
+              className="card-image"
+            />
           </div>
 
           <div className="card">

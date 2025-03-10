@@ -8,7 +8,7 @@ export default function Loader() {
   const [showContent, setShowContent] = useState(false); // Controls transition to landing page
   const [showSplitting, setShowSplitting] = useState(true); // Controls half-ellipse splitting
   const [ellipseAnimationStarted, setEllipseAnimationStarted] = useState(false); // Controls ellipse animation
-  const [logoAnimationStarted, setLogoAnimationStarted] = useState(false); // Controls logo animation
+  // Controls logo animation
 
   useEffect(() => {
     // Start ellipse animation immediately
